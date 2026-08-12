@@ -27,3 +27,6 @@ jobs:
         with:
           name: MERALSIS-debug-apk
           path: app/build/outputs/apk/debug/app-debug.apk
+      - name: Upload mapping-free build info
+        if: always()
+        run: echo "MERALSIS build completed"
